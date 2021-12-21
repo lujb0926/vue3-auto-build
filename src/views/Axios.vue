@@ -5,8 +5,10 @@ const count = ref(0)
 </script>
 
 <template>
-  <h1>Axios</h1>
-  <div>{{count}}</div>
+  <div>
+    <h1>Axios</h1>
+    <div>{{ count }}</div>
+  </div>
 </template>
 
 <style scoped>

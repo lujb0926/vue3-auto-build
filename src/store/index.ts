@@ -5,21 +5,21 @@ const defaultState = {
 }
 
 export default createStore({
-  state(){
+  state() {
     return defaultState
   },
   mutations: {
-    increment (state: typeof defaultState) {
+    increment(state: typeof defaultState) {
       state.count++
     }
   },
   actions: {
-    increment (context) {
+    increment(context) {
       context.commit('increment')
     }
   },
   getters: {
-    double (state: typeof defaultState) {
+    double(state: typeof defaultState) {
       return state.count * 2
     }
   }
