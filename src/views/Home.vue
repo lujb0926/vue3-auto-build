@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useStore } from 'vuex'
+// import axios from '../utils/axios'
 
 const store = useStore()
 console.log(store.state.count)
