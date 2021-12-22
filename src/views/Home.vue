@@ -1,22 +1,20 @@
 <script setup lang="ts">
 import { useStore } from 'vuex'
 
-import axios from '../utils/axios'
-
 const store = useStore()
 console.log(store.state.count)
 const addCount = () => {
   store.dispatch('increment')
 }
 const getData = () => {
-  axios
-    .get('/api/v1/carousel/top/list')
-    .then((res) => {
-      console.log('res.data', res.data.data)
-    })
-    .catch((err) => {
-      console.log('err', err)
-    })
+  // axios
+  //   .get('/api/v1/carousel/top/list')
+  //   .then((res) => {
+  //     console.log('res.data', res.data.data)
+  //   })
+  //   .catch((err) => {
+  //     console.log('err', err)
+  //   })
 }
 getData()
 </script>
@@ -40,6 +38,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   .add-text {
     color: rosybrown;
     font-size: 30px;
